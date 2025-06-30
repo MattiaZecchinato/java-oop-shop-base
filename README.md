@@ -4,16 +4,14 @@ A simple Java console application that models products in a shop using basic Obj
 
 ## 🚀 Features
 
-- Defines a `Prodotto` class with attributes:
-  - Product code (randomly generated)
-  - Name
-  - Description
-  - Price (base and with VAT)
-- Includes methods to:
-  - Get the base price
-  - Calculate the price with VAT
-  - Generate an extended name with code and name
-- Demonstrates usage in the `Main` class
+- Defines a `Prodotto` class with:
+  - Private fields: `code`, `name`, `description`, `price`, and `iva`
+  - Getters and setters for controlled access to fields
+  - Constructor overload for default and custom initialization
+  - Methods to:
+    - Retrieve base price and price with VAT
+    - Generate an extended product name with code and name
+- Demonstrates usage in the `Main` class with multiple product instances
 
 ## 📁 Project Structure
 
@@ -48,13 +46,13 @@ java org.lessons.java.shop.Main
 ## 📌 Example Output
 
 ```plaintext
-16.0 #price
-19.2 #price with iva
-23-Monopoly #code + name
+16.0                   # base price
+19.2                   # price with VAT
+23-Monopoly            # extended name
 ```
 
 (Note: The product code is randomly generated and will vary each time you run the program.)
 
-## Author
+## 👨‍💻 Author
 
 [@Mattia Zecchinato](https://www.github.com/MattiaZecchinato)
